@@ -27,3 +27,9 @@ else
         PATH="$HOME/.local/bin:$PATH"
     fi
 fi
+
+# Fix serial console, if necessary
+if [ -x "~/bin/fixserialterm" ]; then
+	~/bin/fixserialterm
+fi
+
